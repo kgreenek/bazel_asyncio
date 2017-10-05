@@ -1,0 +1,7 @@
+load("@pip_requirements//:requirements.bzl", "requirement")
+
+py_binary(
+    name = "bazel_asyncio",
+    srcs = ["bazel_asyncio.py"],
+    deps = [requirement("asyncio")],
+)
